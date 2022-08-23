@@ -17,15 +17,19 @@ public class ExceptionDemo
             }
             System.out.println("From try block");
         }
+
         catch (ArrayIndexOutOfBoundsException e)
         {
             System.out.println("Invalid index");
             System.out.println(e);
         }
-        finally {
+
+        finally
+        {
             System.out.println("will execute if exception occurs or not");
             scanner.close();
         }
+
         System.out.println("From main method");
 
 
